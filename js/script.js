@@ -84,7 +84,7 @@ let appData = {
         appData.Income.push(items2);
         
         appData.Income.sort();
-        
+
         let str=" ";
         appData.Income.forEach( function(itm, i, mass) {
             str += (++i + " - " + itm + " ; ");
@@ -96,6 +96,6 @@ let appData = {
 };
 console.log(" Наша программа включает в себя: " );
 for( let key in appData){
-    console.log(key);
+    console.log(key + " : " + appData[key]);
 }
 
